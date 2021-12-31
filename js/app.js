@@ -4,9 +4,9 @@ const swLocation = "/twittor/sw.js";
 
 if (navigator.serviceWorker) {
     if (url.includes("localhost")) {
-        navigator.serviceWorker.register(swLocation);
-    } else {
         navigator.serviceWorker.register("../sw.js");
+    } else {
+        navigator.serviceWorker.register(swLocation);
     }
 }
 
